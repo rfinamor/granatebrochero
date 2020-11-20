@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href='img/logo.png' rel='shortcut icon' type='image/png'>
+
+	<style>
+
+	@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+	@import url('https://fonts.googleapis.com/css?family=Montserrat:600');
+	@import url('https://fonts.googleapis.com/css?family=Karla');
+	@import url('https://fonts.googleapis.com/css?family=Quicksand');
+	@media (max-width: 1069px){
+		.navbar{
+			padding-left: 0%!important;
+			
+			width: 100%;
+
+
+		}
+		h1{
+			font-size: 1.3em!important;
+			margin-top: 50px!important;
+		}
+		h2{
+			font-size: 0.5em!important;
+		}
+		.nav-link{
+			padding-top: 5px!important;
+			padding-bottom: 5px!important;
+		}
+	}
+	@media (min-width: 1070px){
+		.navbar-expand-lg .navbar-nav .nav-link {
+    		padding-right: 1.5rem;
+    		padding-left: .5rem;
+
+    	}
+    	h1{
+    		font-size: 1em;
+    	}
+	}
+		.nav-link{
+			font-size: 1.5em;
+		}
+		.navbar{
+			padding-left: 25%;
+			
+			width: 100%;
+
+
+		}
+		.nav-link{
+			padding: 3.5rem 2rem;
+
+		}
+		.navbar-brand{
+			margin-right: 0;
+		}
+		.col-8{
+			text-align: center;
+		}
+		.navbar-light .navbar-nav .nav-link:hover {
+			color:#780B0B;
+		}
+		.navegacion a:nth-child(3){
+			margin-right:5%;
+		}
+		.navegacion a:nth-child(5){
+			margin-left:5%;
+		}
+
+		header{
+		    background-image: url(header.jpg);
+		    background-size: cover;
+		    background-attachment:fixed;
+		    height:1070px;
+		}
+		.titulos{
+			padding-top: 10%;
+		}
+
+		h1{
+			margin-bottom: 1.3rem;
+			padding-left: 20%;
+			width: 100% ;
+			font-family: 'Montserrat', sans-serif ;	
+			font-size: 2em ;	
+			color: white;
+			letter-spacing: 0.1em ;
+			text-shadow: 0 6px 9px #9B8C77, 0px -2px ;
+			animation: titulo 3s linear  ;
+			z-index: 0;	
+			margin-top: 8%;
+
+
+		}
+
+		.h2{
+			position: absolute;
+			height: 25% ;
+			width:55% ;
+			left: 25% ;
+			right: 50%;
+			margin:auto ;
+			z-index: 0;	
+			padding-left: 20%;
+
+		}
+
+		.h2:nth-child(1){
+			margin-top: 5%;
+		}
+
+		.h2:nth-child(2){
+			margin-left: 25%;
+		}
+
+		.h3{
+			margin-left: 15%;
+		}
+
+		.titulos h2:nth-child(1){
+			color: white ;
+			position: absolute ;
+			top:0% ;
+			left:0% ;
+			z-index: 1;
+			font-family: 'Montserrat', sans-serif ;	
+			font-size: 0.9em ;	
+			animation: titulospanuno 1s linear;
+			z-index: 0;	
+
+			/*text-shadow: 0 2px 1px #c4b59d, 0px -2px;*/
+
+		}
+		.titulos h2:nth-child(2){
+			color: #9B8C77 ;
+			position: absolute ;
+			top:75% ;
+			right: 20% ;
+			z-index: 1;
+			font-family: 'Montserrat', sans-serif;	
+			font-size: 1.0em ;	
+			animation: titulospandos 5s ease ;
+			z-index: 0;	
+
+			/*text-shadow: 0 2px 1.5px #c4b59d, 0px -2px;*/
+
+		}
+
+		.quienessomossection{
+			margin-top: 1%;
+		}
+
+		.quienessomos{
+			font-family: 'Montserrat', sans-serif;
+			display:inline-flex;
+			flex-direction: column;
+			align-items: center;
+			font-size:5em;
+			color:#9B8C77;
+			padding-top: 0%;
+		}
+		.quienessomosdiv h3{
+			font-family: 'helvetica',sans-serif;
+			font-size: 3em; 
+
+		}
+		.quienessomosdiv{
+			text-align: center;
+			padding-top: 40%;
+		}
+		.parrafoquienessomos{
+			text-align: center;
+			margin-left: 500px;
+			margin-right: 500px;
+			font-family: 'Quicksand', sans-serif;
+			color: #5b0f0f;
+
+
+		}
+		.quienessomosdiv img{
+			border: 10px solid;
+			border-color: white;
+			box-shadow: 3px 3px 30px ;
+			position: relative;
+			left:4px;
+			width: 50%;
+			height: 50%;
+			z-index: 1;
+		}
+
+		.grisquienessomos{
+			width: 100%;
+			height: 50%;
+			padding-top: 2%;
+			position: relative;
+			z-index: 0;
+		}
+
+
+		.videoquienessomos video{
+			width: 50%;
+			height: 50%;
+			border: 10px solid;
+			border-color: white;
+			box-shadow: 3px 3px 30px ;
+			margin-top: 2%;
+
+
+		}
+
+
+		.videoquienessomos{
+			padding-top: 5%;
+		}
+
+
+/*SERVICIOS */
+
+		.servicios{
+			
+		}
+
+		.tituloServicios h2{
+			font-family: 'Montserrat', sans-serif;
+			text-align: center;
+			font-size:4em;
+			color:#9B8C77;
+			margin-top: 200px;
+			padding-top: 15%;
+		}
+
+		.tituloServicios h3{
+			text-align: center;
+			font-family: 'helvetica',sans-serif;
+			font-size: 3em; 
+		}
+
+		.contenedor-col{
+				text-align: center;
+				padding-top: 2%;
+				max-width: 100%;
+				margin-right: auto;
+				margin-left: auto;
+			    display:-webkit-box;
+    			display:-ms-flexbox;
+    			display:flex;
+				flex-direction: row ;
+				justify-content: center;
+				align-items: center ;
+		}
+
+		.contenedor-col div{
+			flex:auto;
+			margin-left: 25%;
+
+		}
+
+		.contenedor-col ul li{
+			list-style: none;
+			font-family: 'Montserrat', sans-serif;
+			color: #5b0f0f;
+			margin: 3%;
+			font-size: 1.4em;
+
+		}
+
+		.iconos img{
+			margin: 3%;
+			width: 50px;
+			height: 50px;
+
+
+		}
+
+		.iconos{
+			display:flex;
+			justify-content: center;
+			text-align: center;
+
+
+		}
+
+
+		.contenedorOpiniones{
+			margin-left: auto;
+			margin-right: auto;
+			width: 50%;
+			display: flex;
+
+		}
+
+		.opiniones1{
+			flex:auto;
+			width: 100%;
+		}
+		.opiniones2{
+			flex:auto;
+			width: 60%;
+		}
+
+		section h3{
+			text-align: center;
+			padding-top: 5%;
+			padding-bottom: 5%;
+			font-size: 1.5em;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		
+
+/*CABAÑAS*/
+			
+			.myButton {
+				-moz-box-shadow: 2px -1px 7px 0px #8a2a21;
+				-webkit-box-shadow: 2px -1px 7px 0px #8a2a21;
+				box-shadow: 2px -1px 7px 0px #8a2a21;
+				background-color:#800e08;
+				-moz-border-radius:19px;
+				-webkit-border-radius:19px;
+				border-radius:19px;
+				border:6px solid #70251f;
+				display:inline-block;
+				cursor:pointer;
+				color:#ffffff;
+				font-family:Arial;
+				font-size:22px;
+				font-weight:bold;
+				padding:17px 54px;
+				text-decoration:none;
+				text-shadow:0px 1px 0px #800e08;
+			}
+			.myButton:hover {
+				background-color:#f24437;
+			}
+			.myButton:active {
+				position:relative;
+				top:1px;
+			}
+
+
+		.tituloCabañas h2{
+			font-family: 'Montserrat', sans-serif;
+			text-align: center;
+			font-size:4em;
+			color:#9B8C77;
+			margin-top: 200px;
+		}
+
+		.cabañas h3{
+			font-family: 'Montserrat', sans-serif;
+			text-align: center;
+			font-size:2em;
+			margin-top: 2%;
+		}
+
+
+
+		.contenedor_slider1{
+			display: flex;
+		}
+
+		.cabaña_1_desc{
+			flex:auto;
+			flex-grow: 0.2;
+			margin-left: 20%;
+			width: 10%;
+
+		}
+
+		.cabaña_1_desc ul{
+			font-family: 'Karla', sans-serif;
+			list-style: none;
+			font-size: 1.2em;
+		}
+		.cabaña_1_desc li{
+			    position: relative;
+    top: 50%;
+    background-image: url(list.png);
+    background-repeat: no-repeat;
+    padding: 10px 0 10px 46px;
+    box-sizing: border-box;
+    height: 70px;
+
+		}
+
+
+
+
+		.cabaña_1{
+			width: 5%;
+			height: 5%;
+			margin-right: 10%;
+			text-align: center;
+			flex:auto;
+			flex-grow: 0.6;
+
+
+		}
+
+		.cabaña_1 ul{
+			border: 10px solid;
+			border-color: white;
+			box-shadow: 3px 3px 30px ;
+		}
+
+		.cabaña_1 a{
+			text-decoration: none;
+			font-family: 'Montserrat', sans-serif ;	
+			font-size: 1em ;	
+			color: white;
+		}
+
+
+
+
+/*--------------------2-------------------------*/
+
+		.contenedor_slider2{
+			display: flex;
+		}
+
+		.cabaña_2_desc{
+			flex:auto;
+			flex-grow: 0.2;
+			margin-left: 20%;
+			width: 10%;
+
+		}
+
+		.cabaña_2_desc ul{
+			font-family: 'Karla', sans-serif;
+			list-style: none;
+			font-size: 1.2em;
+		}
+		.cabaña_2_desc li{
+			    top: 50%;
+    background-image: url(list.png);
+    background-repeat: no-repeat;
+    padding: 10px 0 10px 46px;
+    box-sizing: border-box;
+    height: 70px;
+		}
+
+
+
+
+		.cabaña_2{
+			width: 5%;
+			height: 5%;
+			margin-right: 10%;
+			text-align: center;
+			flex:auto;
+			flex-grow: 0.6;
+
+
+		}
+
+		.cabaña_2 ul{
+			border: 10px solid;
+			border-color: white;
+			box-shadow: 3px 3px 30px ;
+		}
+
+		.reserva{
+			position: absolute;
+			z-index: 222222;
+			top: 80%;
+			left: 45%;
+			height: 40px;
+			width: 80px;
+			
+			box-shadow: 5px 5px 5px black;
+			background-color:rgb(135,20,20);
+
+		}
+		.cabaña_2 a{
+			text-decoration: none;
+			font-family: 'Montserrat', sans-serif ;	
+			font-size: 1em ;	
+			color: white;
+		}
+
+
+/*---------------------------------------------*/
+
+		.contenedor_slider3{
+			display: flex;
+		}
+
+		.cabaña_3_desc{
+			flex:auto;
+			flex-grow: 0.2;
+			margin-left: 20%;
+			width: 10%;
+
+		}
+
+		.cabaña_3_desc ul{
+			font-family: 'Karla', sans-serif;
+			list-style: none;
+			font-size: 1.2em;
+		}
+		.cabaña_3_desc li{
+			    top: 50%;
+    background-image: url(list.png);
+    background-repeat: no-repeat;
+    padding: 10px 0 10px 46px;
+    box-sizing: border-box;
+    height: 70px;
+		}
+
+
+
+
+		.cabaña_3{
+			width: 5%;
+			height: 5%;
+			margin-right: 10%;
+			text-align: center;
+			flex:auto;
+			flex-grow: 0.6;
+
+
+		}
+
+		.cabaña_3 ul{
+			border: 10px solid;
+			border-color: white;
+			box-shadow: 3px 3px 30px ;
+		}
+
+		.cabaña_3 a{
+			text-decoration: none;
+			font-family: 'Montserrat', sans-serif ;	
+			font-size: 1em ;	
+			color: white;
+		}
+
+/*---------------------------------------------*/
+
+		.contenedor_slider4{
+			display: flex;
+		}
+
+		.cabaña_4_desc{
+			flex:auto;
+			flex-grow: 0.2;
+			margin-left: 20%;
+			width: 10%;
+
+		}
+
+		.cabaña_4_desc ul{
+			font-family: 'Karla', sans-serif;
+			list-style: none;
+			font-size: 1.2em;
+		}
+		.cabaña_4_desc li{
+    top: 50%;
+    background-image: url(list.png);
+    background-repeat: no-repeat;
+    padding: 10px 0 10px 46px;
+    box-sizing: border-box;
+    height: 70px;
+		}
+
+
+
+
+		.cabaña_4{
+			width: 5%;
+			height: 5%;
+			margin-right: 10%;
+			text-align: center;
+			flex:auto;
+			flex-grow: 0.6;
+
+
+		}
+
+		.cabaña_4 ul{
+			border: 10px solid;
+			border-color: white;
+			box-shadow: 3px 3px 30px ;
+		}
+
+		.cabaña_4 a{
+			text-decoration: none;
+			font-family: 'Montserrat', sans-serif ;	
+			font-size: 1em ;	
+			color: white;
+		}
+
+
+
+/*CONTACTO*/
+
+.contacto h2{
+			font-family: 'Montserrat', sans-serif;
+			text-align: center;
+			font-size:4em;
+			color:#9B8C77;
+			padding-top: 15%;
+}
+
+.contenedor-columnas{
+	display: flex;
+}
+
+.columna{
+	flex:auto;
+
+}
+
+.columna:nth-child(1){
+	margin-left: 30%;
+}
+
+.columna:nth-child(2){
+	margin-right: 20%;
+}
+form {padding:10px;} 
+input[type=text],
+input[type=email],
+textarea {
+	width:100%;
+	display: block;
+	margin-bottom:20px;
+}
+
+.icons{
+
+	text-align: center;
+}
+
+.icons img{
+	width: 2%;
+	height: 2%;
+	padding: 2%;
+}
+
+.col1{
+	padding-left: 15%;
+}
+.col2{
+	padding-left: 25%;
+}
+.cols{
+			list-style: none;
+			font-family: 'Montserrat', sans-serif;
+			color: #5b0f0f;
+			margin: 3%;
+			font-size: 1.4em;
+		}
+
+
+	</style>
+	
+	<title>Cabañas Granate</title>
+</head>
+<body>
+	
+				
+
+
+			<nav class="navbar  navbar-expand-md navbar-light bg-light navbar-toggleable-md navegacion">
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse text-center" id="navbarNavAltMarkup">
+			    <div class="navbar-nav navegacion">
+			      <a class="nav-item nav-link" href="#">Inicio</a>
+			      <a class="nav-item nav-link" href="#Quienessomos">Nosotros</a>
+			      <a class="nav-item nav-link" href="#">Cabañas</a>
+			      <a class="navbar-brand" href="#"><img src="img/Logo.png"  class="d-inline-block align-center"></a>
+			      <a class="nav-item nav-link" href="#tituloServicios">Servicios</a>
+			      <a class="nav-item nav-link" href="https://www.google.com.ar/maps/dir//-31.7152605,-65.0173075/@-31.7146426,-65.0181015,17.25z/data=!4m2!4m1!3e3">Ubicacion</a>
+			      <a class="nav-item nav-link" href="#contacto">Contacto</a>
+
+			    </div>
+			  </div>
+			</nav>
+
+
+	
+
+	<header>
+		<div class="container-fluid titulos">
+			<div class="row h2 ml-auto">
+				<h2>Bienvenidos a</h2>
+			</div>
+			<div class="row h1">
+				<h1>CABAÑAS GRANATE</h1>
+			</div>
+			<div class="row h2 h3">
+			<h2>Villa Cura Brochero, Cordoba, Argentina</h2>
+		</div>
+	</div>
+<section id="Quienessomos" class="quienessomossection">
+		<div class=quienessomosdiv>
+			<h2 class="quienessomos">Quienes Somos</h2>
+			<h3>El mejor lugar para disfrutar la naturaleza</h3>
+		
+			<div class="contenedorimgquienessomos">
+				<div class="parrafoquienessomos"><p>Somos una familia de trabajadores y emprendedores del sector.
+				Claudio y Alberto Finamore, hermanos nacidos en Lanus, Buenos Aires, y Rodrigo Finamore, hijo de Claudio y ahijado de Alberto, nos unimos para ofrecerles un lugar de descanso, donde predomina el espacio verde y la vista de montaña. Un lugar unico, rodeados de rios y montañas para disfrutar en familia y en pareja.</p>
+				</div>
+				<div class="grisquienessomos">
+			</div>
+			<img src="quienessomos.jpg">
+
+			<div class="videoquienessomos">
+				<p class="parrafoquienessomos">Les presentamos a Alberto, uno de los dueños del complejo, invitandolos a nuestras cabañas</p>
+
+				<video controls>
+					<source src="alberto.mp4" type="video/mp4">
+
+				</video>
+
+			</div>
+				
+			</div>
+			
+		</div>
+
+		
+	</section>
+	<section id="servicios" class="servicios">
+		<div class="tituloServicios" id="tituloServicios"><h2>Servicios</h2><h3>Todas nuestras cabañas cuentan con:</h3></div>
+			<div class="row">
+				
+				<div class="col-lg-4 col1 cols">
+					<ul>
+						<li>Garaje techado</li>
+						<li>WIFI</li>
+						<li>Cocina</li>
+						<li>TV c/Directv</li>
+						<li>Parrilla</li>
+					</ul>
+				</div>
+				<div class="col-lg-6 col2 cols">
+					<ul>
+						<li>Heladera</li>
+						<li>Vajilla completo</li>
+						<li>Parque y habitaciones con vista a las sierras</li>
+						<li>Aceptamos mascotas</li>
+						<li>Calefaccion y ventilacion</li>
+					</ul>
+				</div>
+
+			</div>	
+		</div>	
+
+		<div  class="iconos">
+			<img src="png/garage.png">
+			<img src="png/wifi.png">
+			<img src="png/heladera.png">
+			<img src="png/perro.png">
+			<img src="png/parrilla.png">
+			<img src="png/montaña.png">
+			<img src="png/tv.png">
+
+		</div>
+
+		<h3 class="opinionesh3">Opiniones</h3>
+
+		<div class="contenedorOpiniones">
+
+			<div class="opiniones1">
+				<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fine.angelini%2Fposts%2F10157155958468906%3A0&width=500" width="500" height="390" style="border:none;overflow:hidden;flex:auto;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+
+				<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmario.juarez.353%2Fposts%2F2356433031048948%3A0&width=500&show_text=true&height=385&appId" width="500" height="385" style="border:none;overflow:hidden;flex:auto;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+			</div>
+			<div class="opiniones2">
+
+
+				<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fchury78%2Fposts%2F10214212096568856%3A0&width=500" width="500" height="390" style="border:none;overflow:hidden;flex:auto;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+
+				<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fyany.nieto.5%2Fposts%2F10215053007380640%3A0&width=500" width="500" height="390" style="border:none;overflow:hidden;flex:auto;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+			</div>
+		</div>
+
+
+
+
+
+
+		
+	</section>
+	<section id="cabañas" class="cabañas">
+
+	</section>
+	<section id="contacto" class="contacto">
+			<h2>Contacto</h2>
+
+		<div class="contenedor-columnas">
+			<div class="columna">
+			<address>
+				<p>Llamanos al: <br>
+				+54 1133764897</p>
+				<p>Visitanos en: <br>
+				Caseros y Sgto Cabral, Villa Cura Brochero, Cordoba </p>
+				<p>Escribinos a:<br>
+					<a href="mailto:rodrigonfinamore@gmail.com">rodrigonfinamore@gmail.com</a>
+				</p>
+			</address>
+			</div>
+			<div class="columna">
+
+			<form action="#" method="post" class="sombra">
+				<input type="text" name="nombre" required placeholder="Tu Nombre">
+
+				<input type="email" name="correo" required placeholder="Tu Correo">
+
+				<textarea cols="10" rows="3" name="mensaje" placeholder="Su Mensaje"></textarea>
+				<div class="txt-der">
+					<input type="submit" value="Enviar">
+ 				</div>
+			</form>
+
+			</div>
+	</div>	
+<div class="icons">
+	<a class="btn-facebook" href="https://www.facebook.com/Granatebrochero"><img src="fb.png"></a>
+	<a href="https://www.instagram.com/granatebrochero"><img src="ig.png"></a>
+
+</div>
+
+
+
+
+
+
+	</section>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
